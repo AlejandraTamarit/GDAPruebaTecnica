@@ -27,6 +27,7 @@ Este proyecto implementa tres servicios RESTful en Laravel para gestionar client
 
 ## Uso
 1. Autenticación
+   
    Login
 
     Endpoint: POST /login
@@ -45,5 +46,44 @@ Este proyecto implementa tres servicios RESTful en Laravel para gestionar client
         "token": "token_generado"
        }
 
+3. Gestión de Clientes
 
+   Registrar Cliente
+
+   Endpoint: POST / ustomer
+    
+   Parámetros:
+
+       {
+        "dni": "",
+        "email": "",
+        "name": "",
+        "last_name": "",
+        "address": "",
+        "region_id": "",
+        "commune_id": '"
+       }
+
+   Encabezado de Autenticación:
+
+       Authorization: Bearer "token_generado"
+
+   Respuesta:
+
+       {
+        "success": true,
+        "customer": {
+            "id": 1,
+            "name": "Nombre",
+            "last_name": "Apellido",
+            "dni": "12345678",
+            "email": "correo@example.com",
+            "address": "Dirección opcional",
+            "commune": "Comuna",
+            "region": "Región",
+            "status": "A",
+            "created_at": "fecha",
+            "updated_at": "fecha"
+            }
+        }
 
