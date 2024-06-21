@@ -15,12 +15,12 @@ Este proyecto implementa tres servicios RESTful en Laravel para gestionar client
    git clone https://github.com/tu_usuario/gda_lab.git
    cd gda_lab
    
-2.- Instalar Dependencias:
+2. Instalar Dependencias:
 
 composer update
 npm update
 
-3.- Configurar Variables de Entorno:
+3. Configurar Variables de Entorno:
 
 Crear un archivo .env con las variables de entorno necesarias (localhost y base de datos)
 
