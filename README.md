@@ -1,4 +1,4 @@
-# Proyecto GDA Lab
+# Proyecto GDA - API's
 
 Este proyecto implementa tres servicios RESTful en Laravel para gestionar clientes (Customers), incluyendo autenticación, registro, consulta y eliminación.
 
@@ -24,6 +24,26 @@ Este proyecto implementa tres servicios RESTful en Laravel para gestionar client
 4. Configurar Variables de Entorno:
 
     Crear un archivo .env con las variables de entorno necesarias (localhost y base de datos)
+
+## Uso
+1. Autenticación
+   Login
+
+    Endpoint: POST /login
+
+    Parámetros:
+   
+       {
+        "email": "usuario@example.com",
+        "password": "contraseña"
+       }
+
+   Respuesta:
+   
+       {
+        "success": true,
+        "token": "token_generado"
+       }
 
 
 
