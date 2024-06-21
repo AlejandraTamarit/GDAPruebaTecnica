@@ -87,3 +87,59 @@ Este proyecto implementa tres servicios RESTful en Laravel para gestionar client
             }
         }
 
+   Consultar Cliente
+   
+   Endpoint: GET /customer
+
+   Parámetros:
+
+        {
+        "dni": "12345678",
+        "email": "correo@example.com"
+        }
+
+   Encabezado de Autenticación:
+
+       Authorization: Bearer "token_generado"
+
+   Respuesta:
+
+       {
+        "success": true,
+        "customer": {
+            "id": 1,
+            "name": "Nombre",
+            "last_name": "Apellido",
+            "dni": "12345678",
+            "email": "correo@example.com",
+            "address": "Dirección opcional",
+            "commune": "Comuna",
+            "region": "Región",
+            "status": "A",
+            "created_at": "fecha",
+            "updated_at": "fecha"
+            }
+        }
+
+    Eliminar Customer
+
+    Endpoint: DELETE /customer
+    
+    Parámetros:
+
+       {
+       "dni": 1
+       }
+
+   Encabezado de Autenticación:
+
+       Authorization: Bearer "token_generado"
+
+   Respuesta:
+
+       {
+       "success": true,
+       "message": "Customer eliminado"
+        }
+
+
