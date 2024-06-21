@@ -146,8 +146,8 @@ Este proyecto implementa tres servicios RESTful en Laravel para gestionar client
 
 Middleware
 
-    AuthTokenMiddleware: Middleware para validar el token de autenticación en cada solicitud.
-    LogMiddleware: Middleware para registrar logs de entrada y salida de información, configurable mediante la variable de entorno APP_ENV.
+    AuthenticateToken: Middleware para validar el token de autenticación en cada solicitud.
+    LogRequests: Middleware para registrar logs de entrada y salida de información, configurable mediante la variable de entorno APP_ENV.
     
 Logs
 
