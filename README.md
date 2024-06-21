@@ -47,9 +47,9 @@ Este proyecto implementa tres servicios RESTful en Laravel para gestionar client
         "token": "token_generado"
        }
 
-3. Gestión de Clientes
+3. Gestión de Customers
 
-   Registrar Cliente
+   Registrar Customer
 
    Endpoint: POST / ustomer
     
@@ -88,7 +88,7 @@ Este proyecto implementa tres servicios RESTful en Laravel para gestionar client
             }
         }
 
-   Consultar Cliente
+   Consultar Customer
    
    Endpoint: GET /customer
 
